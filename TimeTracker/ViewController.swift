@@ -21,5 +21,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func AddTask(sender: UIButton) {
+        performSegueWithIdentifier("addTask", sender: nil)
+    }
 }
 
