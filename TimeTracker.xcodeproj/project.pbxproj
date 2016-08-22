@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272928DC1D6B5D3F008EE666 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272928DB1D6B5D3F008EE666 /* TasksModel.swift */; };
 		274C689D1D68CD4000784DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C689C1D68CD4000784DF4 /* AppDelegate.swift */; };
 		274C689F1D68CD4000784DF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C689E1D68CD4000784DF4 /* ViewController.swift */; };
 		274C68A21D68CD4000784DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274C68A01D68CD4000784DF4 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		272928DB1D6B5D3F008EE666 /* TasksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		274C68991D68CD4000784DF4 /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274C689C1D68CD4000784DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		274C689E1D68CD4000784DF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				274C68A31D68CD4000784DF4 /* Assets.xcassets */,
 				274C68A51D68CD4000784DF4 /* LaunchScreen.storyboard */,
 				274C68A81D68CD4000784DF4 /* Info.plist */,
+				272928DB1D6B5D3F008EE666 /* TasksModel.swift */,
 			);
 			path = TimeTracker;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				274C689F1D68CD4000784DF4 /* ViewController.swift in Sources */,
 				274C689D1D68CD4000784DF4 /* AppDelegate.swift in Sources */,
+				272928DC1D6B5D3F008EE666 /* TasksModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +541,7 @@
 				274C68C31D68CD4000784DF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		274C68C41D68CD4000784DF4 /* Build configuration list for PBXNativeTarget "TimeTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +550,7 @@
 				274C68C61D68CD4000784DF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		274C68C71D68CD4000784DF4 /* Build configuration list for PBXNativeTarget "TimeTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +559,7 @@
 				274C68C91D68CD4000784DF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
