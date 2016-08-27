@@ -7,15 +7,15 @@
 //
 
 import Foundation
-import Realm
+import RealmSwift
 
-class TasksModel {
+class TasksModel : Object {
     dynamic var taskID = 0
     dynamic var name = ""
-    dynamic var description = ""
+    dynamic var taskDescription = ""
     dynamic var startDate = NSDate()
-    dynamic var pauseDate = NSDate()
-    dynamic var endDate = NSDate()
-    dynamic var timeIdle = 0
-    dynamic var timeSpent = 0
+    dynamic var pauseDate: NSDate? = nil
+    dynamic var endDate: NSDate? = nil
+    dynamic var timeIdle = 0.0
+    dynamic var timeSpent = 0.0
 }

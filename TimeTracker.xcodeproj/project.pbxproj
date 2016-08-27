@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		272928DC1D6B5D3F008EE666 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272928DB1D6B5D3F008EE666 /* TasksModel.swift */; };
+		272928DE1D6B5FB1008EE666 /* TasksDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272928DD1D6B5FB1008EE666 /* TasksDetailViewController.swift */; };
 		274C689D1D68CD4000784DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C689C1D68CD4000784DF4 /* AppDelegate.swift */; };
 		274C689F1D68CD4000784DF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C689E1D68CD4000784DF4 /* ViewController.swift */; };
 		274C68A21D68CD4000784DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274C68A01D68CD4000784DF4 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		272928DB1D6B5D3F008EE666 /* TasksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
+		272928DD1D6B5FB1008EE666 /* TasksDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksDetailViewController.swift; sourceTree = "<group>"; };
 		274C68991D68CD4000784DF4 /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		274C689C1D68CD4000784DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		274C689E1D68CD4000784DF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				274C68A51D68CD4000784DF4 /* LaunchScreen.storyboard */,
 				274C68A81D68CD4000784DF4 /* Info.plist */,
 				272928DB1D6B5D3F008EE666 /* TasksModel.swift */,
+				272928DD1D6B5FB1008EE666 /* TasksDetailViewController.swift */,
 			);
 			path = TimeTracker;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			files = (
 				274C689F1D68CD4000784DF4 /* ViewController.swift in Sources */,
 				274C689D1D68CD4000784DF4 /* AppDelegate.swift in Sources */,
+				272928DE1D6B5FB1008EE666 /* TasksDetailViewController.swift in Sources */,
 				272928DC1D6B5D3F008EE666 /* TasksModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,8 +456,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TimeTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -467,8 +473,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TimeTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
