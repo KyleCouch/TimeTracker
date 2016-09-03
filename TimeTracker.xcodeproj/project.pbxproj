@@ -20,6 +20,7 @@
 		274C68CC1D691B0800784DF4 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 274C68CA1D691B0800784DF4 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		274C68CF1D691B1A00784DF4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C68CE1D691B1A00784DF4 /* RealmSwift.framework */; };
 		274C68D01D691B1A00784DF4 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 274C68CE1D691B1A00784DF4 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27551B641D7B466500F64131 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27551B631D7B466500F64131 /* TasksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		274C68BE1D68CD4000784DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		274C68CA1D691B0800784DF4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		274C68CE1D691B1A00784DF4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		27551B631D7B466500F64131 /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				274C68A81D68CD4000784DF4 /* Info.plist */,
 				272928DB1D6B5D3F008EE666 /* TasksModel.swift */,
 				272928DD1D6B5FB1008EE666 /* TasksDetailViewController.swift */,
+				27551B631D7B466500F64131 /* TasksTableViewController.swift */,
 			);
 			path = TimeTracker;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				274C689F1D68CD4000784DF4 /* ViewController.swift in Sources */,
+				27551B641D7B466500F64131 /* TasksTableViewController.swift in Sources */,
 				274C689D1D68CD4000784DF4 /* AppDelegate.swift in Sources */,
 				272928DE1D6B5FB1008EE666 /* TasksDetailViewController.swift in Sources */,
 				272928DC1D6B5D3F008EE666 /* TasksModel.swift in Sources */,

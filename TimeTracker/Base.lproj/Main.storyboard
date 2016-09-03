@@ -27,8 +27,14 @@
                                 <rect key="frame" x="249" y="141" width="105" height="30"/>
                                 <state key="normal" title="Add Task"/>
                                 <connections>
-                                    <action selector="AddTask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Mb-cM-UXR"/>
                                     <segue destination="Wf7-aS-R2s" kind="show" identifier="addTask" id="5Sb-T6-5cX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvo-37-VmM">
+                                <rect key="frame" x="249" y="179" width="105" height="30"/>
+                                <state key="normal" title="View Taks"/>
+                                <connections>
+                                    <segue destination="NPS-S3-Xdc" kind="show" identifier="viewTasks" id="Pd5-SQ-z5G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +99,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2KB-9h-3pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320" y="349"/>
+            <point key="canvasLocation" x="1296" y="-255"/>
+        </scene>
+        <!--Tasks Table View Controller-->
+        <scene sceneID="j2W-X6-I8C">
+            <objects>
+                <tableViewController id="NPS-S3-Xdc" customClass="TasksTableViewController" customModule="TimeTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0TZ-6i-RaF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EMw-DZ-vFc">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EMw-DZ-vFc" id="J8a-oE-sMh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NPS-S3-Xdc" id="27O-sy-eZg"/>
+                            <outlet property="delegate" destination="NPS-S3-Xdc" id="gC3-6g-3Wr"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TtQ-91-I2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="548"/>
         </scene>
     </scenes>
 </document>
