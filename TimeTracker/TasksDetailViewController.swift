@@ -56,5 +56,7 @@ class TasksDetailViewController: UIViewController {
         realm.beginWrite()
         realm.add(task)
         try! realm.commitWrite()
+        
+        performSegueWithIdentifier("returnFromAddTask", sender: nil)
     }
 }
