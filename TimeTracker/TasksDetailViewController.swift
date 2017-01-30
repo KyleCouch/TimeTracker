@@ -37,15 +37,15 @@ class TasksDetailViewController: UIViewController {
     }
     */
 
-    @IBAction func StartTask(sender: UIButton) {
+    @IBAction func StartTask(_ sender: UIButton) {
         
         let realm = try! Realm()
         
-        let taskID = realm.objects(TasksModel).max("taskID") as Int?
+        let taskID = realm.objects(TasksModel.self).max(ofProperty: "taskID") as Int?
         
         if (taskID != nil)
         {
-            print(taskID);
+            print(taskID!);
         }
         
         let task = TasksModel()

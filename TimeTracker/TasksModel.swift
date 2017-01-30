@@ -13,9 +13,9 @@ class TasksModel : Object {
     dynamic var taskID = 0
     dynamic var name = ""
     dynamic var taskDescription = ""
-    dynamic var startDate = NSDate()
-    dynamic var pauseDate: NSDate? = nil
-    dynamic var endDate: NSDate? = nil
+    dynamic var startDate = Date()
+    dynamic var pauseDate: Date? = nil
+    dynamic var endDate: Date? = nil
     dynamic var timeIdle = 0.0
     dynamic var timeSpent = 0.0
 }

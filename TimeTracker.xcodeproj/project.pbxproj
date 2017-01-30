@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271461C31E3EBAEF005F9035 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271461C21E3EBAEF005F9035 /* Realm.framework */; };
+		271461C71E3EBAF8005F9035 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271461C61E3EBAF8005F9035 /* RealmSwift.framework */; };
 		272928DC1D6B5D3F008EE666 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272928DB1D6B5D3F008EE666 /* TasksModel.swift */; };
 		272928DE1D6B5FB1008EE666 /* TasksDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272928DD1D6B5FB1008EE666 /* TasksDetailViewController.swift */; };
 		274C689D1D68CD4000784DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C689C1D68CD4000784DF4 /* AppDelegate.swift */; };
@@ -16,11 +18,9 @@
 		274C68A71D68CD4000784DF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274C68A51D68CD4000784DF4 /* LaunchScreen.storyboard */; };
 		274C68B21D68CD4000784DF4 /* TimeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C68B11D68CD4000784DF4 /* TimeTrackerTests.swift */; };
 		274C68BD1D68CD4000784DF4 /* TimeTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C68BC1D68CD4000784DF4 /* TimeTrackerUITests.swift */; };
-		274C68CB1D691B0800784DF4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C68CA1D691B0800784DF4 /* Realm.framework */; };
-		274C68CC1D691B0800784DF4 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 274C68CA1D691B0800784DF4 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		274C68CF1D691B1A00784DF4 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C68CE1D691B1A00784DF4 /* RealmSwift.framework */; };
-		274C68D01D691B1A00784DF4 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 274C68CE1D691B1A00784DF4 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27551B641D7B466500F64131 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27551B631D7B466500F64131 /* TasksTableViewController.swift */; };
+		27EAC9361E3EC4DA0006786E /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 271461C61E3EBAF8005F9035 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27EAC9371E3EC4DE0006786E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 271461C21E3EBAEF005F9035 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		274C68CD1D691B0800784DF4 /* Embed Frameworks */ = {
+		271461C51E3EBAEF005F9035 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				274C68D01D691B1A00784DF4 /* RealmSwift.framework in Embed Frameworks */,
-				274C68CC1D691B0800784DF4 /* Realm.framework in Embed Frameworks */,
+				27EAC9371E3EC4DE0006786E /* Realm.framework in Embed Frameworks */,
+				27EAC9361E3EC4DA0006786E /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +56,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		271461C21E3EBAEF005F9035 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		271461C61E3EBAF8005F9035 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		272928DB1D6B5D3F008EE666 /* TasksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		272928DD1D6B5FB1008EE666 /* TasksDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksDetailViewController.swift; sourceTree = "<group>"; };
 		274C68991D68CD4000784DF4 /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +73,6 @@
 		274C68B81D68CD4000784DF4 /* TimeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		274C68BC1D68CD4000784DF4 /* TimeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackerUITests.swift; sourceTree = "<group>"; };
 		274C68BE1D68CD4000784DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		274C68CA1D691B0800784DF4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		274C68CE1D691B1A00784DF4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		27551B631D7B466500F64131 /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,8 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274C68CF1D691B1A00784DF4 /* RealmSwift.framework in Frameworks */,
-				274C68CB1D691B0800784DF4 /* Realm.framework in Frameworks */,
+				271461C71E3EBAF8005F9035 /* RealmSwift.framework in Frameworks */,
+				271461C31E3EBAEF005F9035 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +106,8 @@
 		274C68901D68CD4000784DF4 = {
 			isa = PBXGroup;
 			children = (
-				274C68CE1D691B1A00784DF4 /* RealmSwift.framework */,
-				274C68CA1D691B0800784DF4 /* Realm.framework */,
+				271461C61E3EBAF8005F9035 /* RealmSwift.framework */,
+				271461C21E3EBAEF005F9035 /* Realm.framework */,
 				274C689B1D68CD4000784DF4 /* TimeTracker */,
 				274C68B01D68CD4000784DF4 /* TimeTrackerTests */,
 				274C68BB1D68CD4000784DF4 /* TimeTrackerUITests */,
@@ -169,7 +169,7 @@
 				274C68951D68CD4000784DF4 /* Sources */,
 				274C68961D68CD4000784DF4 /* Frameworks */,
 				274C68971D68CD4000784DF4 /* Resources */,
-				274C68CD1D691B0800784DF4 /* Embed Frameworks */,
+				271461C51E3EBAEF005F9035 /* Embed Frameworks */,
 				274C68D11D691E9600784DF4 /* ShellScript */,
 			);
 			buildRules = (
@@ -229,13 +229,16 @@
 				TargetAttributes = {
 					274C68981D68CD4000784DF4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					274C68AC1D68CD4000784DF4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 274C68981D68CD4000784DF4;
 					};
 					274C68B71D68CD4000784DF4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 274C68981D68CD4000784DF4;
 					};
 				};
@@ -466,6 +469,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -483,6 +487,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -490,11 +495,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/Kyle/Documents/realm-swift-1.0.2/ios/swift-2.2";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/Kyle/Desktop/realm-swift-2.4.1/ios/swift-3.0.2";
 				INFOPLIST_FILE = TimeTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeTracker.app/TimeTracker";
 			};
 			name = Debug;
@@ -503,11 +509,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/Kyle/Documents/realm-swift-1.0.2/ios/swift-2.2";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/Kyle/Desktop/realm-swift-2.4.1/ios/swift-3.0.2";
 				INFOPLIST_FILE = TimeTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeTracker.app/TimeTracker";
 			};
 			name = Release;
@@ -519,6 +526,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTrackerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TimeTracker;
 			};
 			name = Debug;
@@ -530,6 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KyleCouch.TimeTrackerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TimeTracker;
 			};
 			name = Release;

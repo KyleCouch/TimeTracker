@@ -11,7 +11,7 @@ import RealmSwift
 
 class Cell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
-        super.init(style: .Subtitle, reuseIdentifier: reuseIdentifier)
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
     }
     
     required init(coder: NSCoder) {
@@ -22,33 +22,33 @@ class Cell: UITableViewCell {
 class TasksTableViewController: UITableViewController {
     
     let realm = try! Realm()
-    let results = try! Realm().objects(TasksModel.self).sorted("startDate")
+    let results = try! Realm().objects(TasksModel.self).sorted(byKeyPath: "startDate")
     var notificationToken: NotificationToken?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.registerClass(Cell.self, forCellReuseIdentifier: "cell")
+        tableView.register(Cell.self, forCellReuseIdentifier: "cell")
         
         // Set results notification block
         self.notificationToken = results.addNotificationBlock { (changes: RealmCollectionChange) in
             switch changes {
-            case .Initial:
+            case .initial:
                 // Results are now populated and can be accessed without blocking the UI
                 self.tableView.reloadData()
                 break
-            case .Update(_, let deletions, let insertions, let modifications):
+            case .update(_, let deletions, let insertions, let modifications):
                 // Query results have changed, so apply them to the TableView
                 self.tableView.beginUpdates()
-                self.tableView.insertRowsAtIndexPaths(insertions.map { NSIndexPath(forRow: $0, inSection: 0) },
-                    withRowAnimation: .Automatic)
-                self.tableView.deleteRowsAtIndexPaths(deletions.map { NSIndexPath(forRow: $0, inSection: 0) },
-                    withRowAnimation: .Automatic)
-                self.tableView.reloadRowsAtIndexPaths(modifications.map { NSIndexPath(forRow: $0, inSection: 0) },
-                    withRowAnimation: .Automatic)
+                self.tableView.insertRows(at: insertions.map { IndexPath(row: $0, section: 0) },
+                    with: .automatic)
+                self.tableView.deleteRows(at: deletions.map { IndexPath(row: $0, section: 0) },
+                    with: .automatic)
+                self.tableView.reloadRows(at: modifications.map { IndexPath(row: $0, section: 0) },
+                    with: .automatic)
                 self.tableView.endUpdates()
                 break
-            case .Error(let err):
+            case .error(let err):
                 // An error occurred while opening the Realm file on the background worker thread
                 fatalError("\(err)")
                 break
@@ -70,16 +70,16 @@ class TasksTableViewController: UITableViewController {
     
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! Cell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Cell
         
         let object = results[indexPath.row]
         cell.textLabel?.text = object.name
@@ -88,17 +88,17 @@ class TasksTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Current Tasks"
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 75
     }
     
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.textLabel?.textAlignment = .Center
+            headerView.textLabel?.textAlignment = .center
         }
     }
  
